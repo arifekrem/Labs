@@ -1,1 +1,1 @@
-These are examples for the labs of my CS courses at  the Toronto Metropolitan University.
+These are examples for the labs and assignments of my CS courses at  the Toronto Metropolitan University.
