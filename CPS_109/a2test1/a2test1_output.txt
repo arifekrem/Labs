@@ -1,0 +1,38 @@
+cd "/Users/ekremyilmaz/Desktop/Desktop/University/%                                                
+ekremyilmaz@Ekrems-MacBook-Pro Desktop % cd "/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109"
+ekremyilmaz@Ekrems-MacBook-Pro CPS 109 % /usr/local/bin/python3 "/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py"
+./Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:218: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  tsk2 = a2.task2()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:218: ResourceWarning: unclosed file <_io.TextIOWrapper name='unique_QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  tsk2 = a2.task2()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:218: ResourceWarning: unclosed file <_io.TextIOWrapper name='Overlapping.txt' mode='w' encoding='UTF-8'>
+  tsk2 = a2.task2()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:219: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  self.assertEqual(a2.task2(), '\ufeffanswer Lady Catelyn Stark\n')
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:219: ResourceWarning: unclosed file <_io.TextIOWrapper name='unique_QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  self.assertEqual(a2.task2(), '\ufeffanswer Lady Catelyn Stark\n')
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:219: ResourceWarning: unclosed file <_io.TextIOWrapper name='Overlapping.txt' mode='w' encoding='UTF-8'>
+  self.assertEqual(a2.task2(), '\ufeffanswer Lady Catelyn Stark\n')
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..../Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:234: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  tsk6 = a2.task6()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:235: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  self.assertEqual(a2.task6(), '\ufeffanswer , 1.2822814351293822e-05 \n')
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:238: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  tsk7 = a2.task7()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/ekremyilmaz/Desktop/Desktop/University/CPS 109/a2.py:239: ResourceWarning: unclosed file <_io.TextIOWrapper name='QA_Pairs.txt' mode='r' encoding='UTF-8'>
+  self.assertEqual(a2.task7(), 'answer , 0.07344908060421101 \n')
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.
+----------------------------------------------------------------------
+Ran 7 tests in 3.164s
+
+OK
