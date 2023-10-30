@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#potatoHead {
+    position: relative; 
+    width: 500px;
+    height: 700px;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+.part {
+    position: absolute; 
+    cursor: move;
+}
+
+.part:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+}
+
+#eyes {
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    left: 25%;
+}
+
+#nose {
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 33%; 
+}
+
+#mouth {
+    width: 100px;
+    height: 100px;
+    top: 55%; 
+    left: 33%; 
+}
+
+#hat {
+    width: 150px;
+    height: 150px;
+    top: 5%; 
+    left: 25%;
+}
+

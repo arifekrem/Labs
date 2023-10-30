@@ -1,0 +1,38 @@
+body {
+    font-family: 'Oswald', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(199, 100%, 18%);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.content img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+.content p {
+    padding: 20px;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

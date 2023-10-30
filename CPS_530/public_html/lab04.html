@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/oswald-4');
+</style>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 04</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter your address"><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="(416) 555-5555"><br><br>
+        
+        <button type="button" onclick="validateAndDisplay()">Submit</button>
+    </form>
+    <div id="output"></div>
+    
+    <textarea id="textInput" onkeyup="countChars()"></textarea>
+    <div>Total Characters: <span id="totalChars">0</span></div>
+    <div>Letters: <span id="letterChars">0</span></div>
+    
+    <div id="bookmarks"></div>
+
+    <script>
+        function validateAndDisplay() {
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+
+            if(!/^[a-zA-Z\s]+$/.test(name)) {
+                alert('Invalid name format');
+                return;
+            }
+
+            if (!phonePattern.test(phone)) {
+                alert('Invalid phone number format');
+                return;
+            }
+
+            const transformedPhone = phone.replace(/\((\d{3})\)\s(\d{3}-\d{4})/, '$1-$2');
+
+            const address = document.getElementById('address').value;
+            document.getElementById('output').innerHTML = `<strong>Name:</strong> ${name} <br> <strong>Address:</strong> ${address} <br> <strong>Phone:</strong> ${transformedPhone}`;
+        }
+
+        function countChars() {
+            const text = document.getElementById('textInput').value;
+            document.getElementById('totalChars').innerText = text.length;
+            const letterCount = (text.match(/[A-Za-z]/g) || []).length;
+            document.getElementById('letterChars').innerText = letterCount;
+        }
+
+        const bookmarks = [
+            { url: 'https://www.cs.ryerson.ca/~eyilmaz/index.html', secure: true },
+            { url: 'https://www.cs.ryerson.ca/~eyilmaz/lab03/lab03a.html', secure: false },
+        ];
+        let bookmarkHTML = '';
+        for (let bm of bookmarks) {
+            const icon = bm.secure ? '<i class="fa-regular fa-lock" style="color: #669c35;"></i>' : '<i class="fa-regular fa-lock-open" style="color: red;"></i>';
+            bookmarkHTML += `${icon} <a href="${bm.url}" target="_blank">${bm.url}</a><br>`;
+        }
+        document.getElementById('bookmarks').innerHTML = bookmarkHTML;
+    </script>
+</body>
+</html>

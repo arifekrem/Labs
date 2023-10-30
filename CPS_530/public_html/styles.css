@@ -1,0 +1,90 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url('white_bg.jpeg');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    background-color: #323232;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.main-nav {
+    background-color: #666; 
+    padding: 10px 0;
+    display: flex;  
+    justify-content: center;
+}
+
+.nav-link:hover {
+    background-color: #888888;
+    border-radius: 8px;
+}
+
+.content-wrap {
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid #323232;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;  
+}
+
+#about {
+    text-align: center;
+    margin-top: 0rem;
+}
+
+#gallery {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.art-figure {
+    position: relative;
+    z-index: 1;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+.art-figure:hover {
+    z-index: 2; 
+    transform: scale(1.03);
+}
+
+.extra-details {
+    margin: 1.5em 0;
+    padding: 20px;
+    border: 1px solid #B9CEDF;
+}
+
+.page-footer {
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.page-footer a {
+    color: #6894e6;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
